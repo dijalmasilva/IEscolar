@@ -179,6 +179,7 @@ body{
 
 .modal_dark {
     position: fixed;
+    top: 0px !important;
     width: 100%;
     height: 100%;
     background: #000;
@@ -188,6 +189,7 @@ body{
 
 .modal_start {
     position: fixed;
+    top: 0px !important;
     width: 100%;
     height: 100%;
     z-index: 5;
@@ -247,14 +249,7 @@ body{
 		font-size: 20px !important;
 	}
 
-	.container_slide {
-	    width: 100%;
-	    margin-top: 160px;
-	    background: url(../imagens/cajazeiras/catedral-jul-2012-b.jpg) no-repeat fixed;
-	    background-size: 100%;
-	    height: 200px !important;
-	    text-align: center;
-	}
+	
 }
 
 @media(max-width: 425px){
