@@ -68,9 +68,15 @@ $(document).ready(function () {
        $(this).removeClass('animated zoomInUp');
     });
     
-    $('.modal_start').click(function (){
-       $(this).addClass('invisible') ;
-       $('.modal_dark').addClass('invisible');
+    $('#x').click(function (){
+        fecharModalLogin();   
+    });
+
+    $('body').keyup(function(event) {
+        /* Act on the event */
+        if (event.which == 27){
+            fecharModalLogin();
+        }
     });
 });
 
@@ -78,4 +84,9 @@ function abrirModalLogin(){
     $('.modal_dark').removeClass('invisible');
     $('.modal_start').removeClass('invisible');
     $('.modal_conteudo').addClass('animated zoomInUp');
+}
+
+function fecharModalLogin(){
+    $('.modal_dark').addClass('invisible') ;
+    $('.modal_start').addClass('invisible');
 }

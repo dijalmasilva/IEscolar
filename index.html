@@ -6,7 +6,7 @@
         <title>IEscolar Online - Login</title>
         <link rel="stylesheet" type="text/css" href="resources/css/login.css" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <meta name="theme-color" content="#5C9464">
+        <meta name="theme-color" content="#5C9464" />
         <link href="resources/css/newCss.css" rel="stylesheet" type="text/css"/>
         <link href="resources/css/animate.css" rel="stylesheet" type="text/css"/>
         <link href="resources/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
@@ -17,40 +17,13 @@
         <link href="resources/imagens/logo/favicon.png" type="image/png" rel="icon"/>
     <head>
     <body>
-        <div class="modal_dark invisible">
-        </div>
-        <div class="modal_start invisible">
-            <div class="modal_conteudo">
-                <div>
-                    <img src="resources/imagens/Coruja/coruja2.gif" class="icon_modal"/>
-                </div>
-                <div class="modal_title">
-                    <h2>LOGIN</h2>
-                </div>
-                <div class="modal_login">
-                    <form role="form">
-                        <div class="form-group">
-                            <label for="usr">Matrícula:</label>
-                            <input type="text" class="form-control" id="usr" autofocus=""/>
-                        </div>
-                        <div class="form-group">
-                            <label for="pwd">Senha:</label>
-                            <input type="password" class="form-control" id="pwd"/>
-                        </div>
-                        <a href="#">Esqueci a senha</a>
-                        <div class="botao_entrar">
-                            <input type="submit" class="btn btn-default btn-lg btn-login" value="Entrar"/>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
+        
         <div class="header_login">
             <div class="icon_sistema">
                 <img alt="IEscolar" src="resources/imagens/logo/logo-iescolar.png" id="icon_iescolar"/>
             </div>
             <div class="btLogin">
-                <button class="btn btn-default btn-lg btn-login" onclick="abrirModalLogin()">Login</button>
+                <button class="btn btn-default btn-lg btn-login" onclick="abrirModalLogin()">Entrar</button>
             </div>
         </div>
         <div class="container_slide">
@@ -60,7 +33,7 @@
                 <h3>PREFEITURA MUNICIPAL DE CAJAZEIRAS </h3><h3>SECRETARIA DE EDUCAÇÃO</h3>
             </div>
             <div class="login_big">
-                <button class="btn-transparent animated bounce" onclick="abrirModalLogin()">LOGIN</button>
+                <button class="btn-transparent animated bounce" onclick="abrirModalLogin()">ENTRAR</button>
             </div>
         </div>
         <div class="container_section container_cinza">
@@ -171,6 +144,37 @@
             <div class="text-center" id="copyright">
                 Copyright&copy; 2015 <a href="http://redenetsolucoes.com.br/" target="_blank">RedeNet Soluções</a>. Todos os direitos reservados.<br/>
                 <span>contato@redenetsolucoes.com.br</span>
+            </div>
+        </div>
+        <div class="modal_dark invisible">
+        </div>
+        <div class="modal_start invisible">
+            <div class="modal_conteudo">
+                <div>
+                    <img src="resources/imagens/Coruja/coruja2.gif" class="icon_modal"/>
+                </div>
+                <div class="modal_title">
+                	<div class="text-right">
+                		<a href="#" id="x"><img src="resources/imagens/icones/close.svg" class="icons_little"></a>
+                	</div>
+                    <h2>ENTRAR</h2>
+                </div>
+                <div class="modal_login">
+                    <form role="form">
+                        <div class="form-group">
+                            <label for="usr">Matrícula:</label>
+                            <input type="text" class="form-control" id="usr" autofocus=""/>
+                        </div>
+                        <div class="form-group">
+                            <label for="pwd">Senha:</label>
+                            <input type="password" class="form-control" id="pwd"/>
+                        </div>
+                        <a href="#">Esqueci a senha</a>
+                        <div class="botao_entrar">
+                            <input type="submit" class="btn btn-default btn-lg btn-login" value="Entrar"/>
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
     </body>
