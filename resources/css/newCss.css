@@ -237,6 +237,16 @@ body{
     text-align: right;
 }
 
+.icon_up {
+    width: 50px;
+}
+
+.button_top{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
 .invisible {
     display: none;
 }
@@ -262,10 +272,6 @@ body{
 		font-size: 20px !important;
         
 	}
-
-/*    .btn-transparent {
-        color: black;
-    } */
 
 	.container_slide {
         background: url(../imagens/cajazeiras/catedral-jul-2012-b.jpg) fixed no-repeat;
@@ -346,6 +352,10 @@ body{
         height: 370px;
         margin-top: 100px;
     }
+
+    .icon_up {
+        width: 40px;
+    }
 }
 
 @media(max-width: 375px){
@@ -396,5 +406,13 @@ body{
         width: 300px;
         height: 350px;
         margin-top: 120px;
+    }
+
+    .icon_up {
+        width: 35px;
+    }
+
+    .button_top {
+        bottom: 10px;
     }
 }

@@ -42,6 +42,22 @@ $(document).ready(function () {
             }, 0);
         }
 
+        //botaoTopo
+        if (posicaoScroll > 150){
+            $('#descer').addClass('invisible');
+            $('#descer').removeClass('animated fadeInUp');
+            $('#voltarAoTopo').removeClass('invisible');
+            $('#voltarAoTopo').addClass('animated fadeInUp');
+        }
+
+        //botaoDown
+        if (posicaoScroll < 100){
+            $('#voltarAoTopo').addClass('invisible');
+            $('#voltarAoTopo').removeClass('animated fadeInUp');
+            $('#descer').removeClass('invisible');
+            $('#descer').addClass('animated fadeInUp');
+        }
+
         //efeito do iescolar
         if (posicaoScroll > 150) {
             $('#iescolar').addClass('animated rotateInDownLeft');
@@ -77,6 +93,24 @@ $(document).ready(function () {
         if (event.which == 27){
             fecharModalLogin();
         }
+    });
+
+    $('#voltarAoTopo').click(function(event) {
+        /* Act on the event */
+        $('html, body').animate({
+            scrollTop: '0'},
+            1000, function() {
+            /* stuff to do after animation is complete */
+        });
+    });
+
+    $('#descer').click(function(event) {
+        /* Act on the event */
+        $('html, body').animate({
+            scrollTop: '677'},
+            700, function() {
+            /* stuff to do after animation is complete */
+        });
     });
 });
 
