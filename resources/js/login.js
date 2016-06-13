@@ -175,3 +175,17 @@ function fecharModalLogin(){
     $('.modal_dark').addClass('invisible') ;
     $('.modal_start').addClass('invisible');
 }
+
+function centralizarInputMatricula (){
+    $('modal_conteudo').css({
+        scrollTop: '100%'
+    });
+    console.log('mouseestanele');
+}
+
+function descentralizarInputMatricula(){
+    $('modal_conteudo').css({
+        scrollTop: '0'
+    });   
+    console.log('mousesaiu');
+}
