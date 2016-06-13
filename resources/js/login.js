@@ -147,7 +147,7 @@ $(document).ready(function () {
                 1000, function() {
                 /* stuff to do after animation is complete */
             });
-        }else if (widthTela > 425){
+        }else{
             
             //Faz a função de rolagem em 1 segundo
             $('html, body').animate({
