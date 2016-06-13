@@ -14,7 +14,7 @@ $(document).ready(function () {
 
     $(window).scroll(function () {
         posicaoScroll = $(this).scrollTop();
-        console.log(posicaoScroll);
+        
 //        Função para rolagem do header
         if (posicaoScroll === 0) {
             $('.header_login').animate({
@@ -84,29 +84,9 @@ $(document).ready(function () {
             if (posicaoScroll > 1877) {
                 $('.icon-footer').addClass('animated slideInLeft');
             }
-        //verifica se é um celular
-        }else{
-            //efeito do iescolar
-            if (posicaoScroll > 69) {
-                $('#iescolar').addClass('animated rotateInDownLeft');
-            }
-
-            //efeito das funções 
-            if (posicaoScroll > 540) {
-                $('.effect').addClass('animated bounceInUp');
-            }
-
-            //efeito redes sociais
-            if (posicaoScroll > 2070) {
-                $('.row_custom').addClass('animated zoomIn');
-            }
-
-            //efeito coruja rodapé
-            if (posicaoScroll > 2525) {
-                $('.icon-footer').addClass('animated slideInLeft');
-            }
+        
         }
-
+        
         //faz a troca entre os botões de rolagem
 
         //botaoTopo
@@ -184,7 +164,11 @@ $(document).ready(function () {
 function abrirModalLogin(){
     $('.modal_dark').removeClass('invisible');
     $('.modal_start').removeClass('invisible');
-    $('.modal_conteudo').addClass('animated zoomInUp');
+    if (widthTela > 425){
+        $('.modal_conteudo').addClass('animated zoomInUp');
+    }else{
+        $('.modal_conteudo').addClass('animated fadeIn');
+    }
 }
 //função  para fechar o modal de login
 function fecharModalLogin(){
