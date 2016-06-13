@@ -11,11 +11,10 @@ $(document).ready(function () {
     var posicaoScroll = 0;
     valorIconDown = -10;
     widthTela = $(window).width();
-    console.log(widthTela);
 
     $(window).scroll(function () {
         posicaoScroll = $(this).scrollTop();
-
+        console.log(posicaoScroll);
 //        Função para rolagem do header
         if (posicaoScroll === 0) {
             $('.header_login').animate({
@@ -66,23 +65,44 @@ $(document).ready(function () {
             }
         //verifica se é um tablet
         }else if (widthTela > 425){
-             //efeito do iescolar
-            if (posicaoScroll > 120) {
+            //efeito do iescolar
+            if (posicaoScroll > 74) {
                 $('#iescolar').addClass('animated rotateInDownLeft');
             }
 
             //efeito das funções 
-            if (posicaoScroll > 490) {
+            if (posicaoScroll > 497) {
                 $('.effect').addClass('animated bounceInUp');
             }
 
             //efeito redes sociais
-            if (posicaoScroll > 1100) {
+            if (posicaoScroll > 1400) {
                 $('.row_custom').addClass('animated zoomIn');
             }
 
             //efeito coruja rodapé
-            if (posicaoScroll > 1600) {
+            if (posicaoScroll > 1877) {
+                $('.icon-footer').addClass('animated slideInLeft');
+            }
+        //verifica se é um celular
+        }else{
+            //efeito do iescolar
+            if (posicaoScroll > 69) {
+                $('#iescolar').addClass('animated rotateInDownLeft');
+            }
+
+            //efeito das funções 
+            if (posicaoScroll > 540) {
+                $('.effect').addClass('animated bounceInUp');
+            }
+
+            //efeito redes sociais
+            if (posicaoScroll > 2070) {
+                $('.row_custom').addClass('animated zoomIn');
+            }
+
+            //efeito coruja rodapé
+            if (posicaoScroll > 2525) {
                 $('.icon-footer').addClass('animated slideInLeft');
             }
         }
@@ -151,7 +171,7 @@ $(document).ready(function () {
             
             //Faz a função de rolagem em 1 segundo
             $('html, body').animate({
-                scrollTop: '497'},
+                scrollTop: '495'},
                 1000, function() {
                 /* stuff to do after animation is complete */
             });
