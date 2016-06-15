@@ -14,6 +14,7 @@ $(document).ready(function () {
 
     $(window).scroll(function () {
         posicaoScroll = $(this).scrollTop();
+
         
 //        Função para rolagem do header
         if (posicaoScroll === 0) {
@@ -158,6 +159,11 @@ $(document).ready(function () {
         }
 
     });        
+
+    $('.modal_start').scroll(function() {
+        var  scro= $(this).scrollTop();
+        console.log(scro);
+    });
 });
 
 //função para exibir o modal de login
@@ -177,15 +183,19 @@ function fecharModalLogin(){
 }
 
 function centralizarInputMatricula (){
-    $('modal_conteudo').css({
-        scrollTop: '100%'
+
+    
+    $('.modal_start').animate({
+        scrollTop: "200"},
+        20, function() {
+        console.log('mouseestanele');
     });
-    console.log('mouseestanele');
 }
 
 function descentralizarInputMatricula(){
-    $('modal_conteudo').css({
-        scrollTop: '0'
-    });   
-    console.log('mousesaiu');
+    $('.modal_start').animate({
+        scrollTop: "0"},
+        20, function() {
+        console.log('mousesaiu');
+    });
 }
