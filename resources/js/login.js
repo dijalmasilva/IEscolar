@@ -182,12 +182,28 @@ function fecharModalLogin(){
     $('.modal_start').addClass('invisible');
 }
 
-/*
-function centralizarInputMatricula (){
 
+function centralizarInputMatricula (){
+    $('.modal_start').animate({
+        scrollTop: "100"},
+        20, function() {
+        console.log('mouseestanele');
+    });
     
     $('.modal_start').animate({
         scrollTop: "200"},
+        20, function() {
+        console.log('mouseestanele');
+    });
+
+    $('.modal_start').animate({
+        scrollTop: "300"},
+        20, function() {
+        console.log('mouseestanele');
+    });
+
+    $('.modal_start').animate({
+        scrollTop: "400"},
         20, function() {
         console.log('mouseestanele');
     });
@@ -199,4 +215,4 @@ function descentralizarInputMatricula(){
         20, function() {
         console.log('mousesaiu');
     });
-}*/
+}
