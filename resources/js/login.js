@@ -184,6 +184,9 @@ function fecharModalLogin(){
 
 
 function centralizarInputMatricula (){
+
+    $('.modal_start').delay(600);
+
     $('.modal_start').animate({
         scrollTop: "100"},
         20, function() {
