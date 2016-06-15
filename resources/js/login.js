@@ -182,6 +182,7 @@ function fecharModalLogin(){
     $('.modal_start').addClass('invisible');
 }
 
+/*
 function centralizarInputMatricula (){
 
     
@@ -198,4 +199,4 @@ function descentralizarInputMatricula(){
         20, function() {
         console.log('mousesaiu');
     });
-}
+}*/
