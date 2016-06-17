@@ -185,8 +185,6 @@ function fecharModalLogin(){
 
 function centralizarInputMatricula (){
 
-    $('.modal_start').delay(600);
-    
     var altura = $(window).height();
     var scrollTeste = altura / 2;
     console.log(altura, scrollTeste);
