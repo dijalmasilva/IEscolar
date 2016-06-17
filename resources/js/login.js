@@ -186,30 +186,13 @@ function fecharModalLogin(){
 function centralizarInputMatricula (){
 
     $('.modal_start').delay(600);
-
-    $('.modal_start').animate({
-        scrollTop: "100"},
-        20, function() {
-        console.log('mouseestanele');
-    });
     
+    var altura = $(window).height();
+    var scrollTeste = altura / 2;
+    console.log(altura, scrollTeste);
     $('.modal_start').animate({
-        scrollTop: "200"},
-        20, function() {
-        console.log('mouseestanele');
-    });
-
-    $('.modal_start').animate({
-        scrollTop: "300"},
-        20, function() {
-        console.log('mouseestanele');
-    });
-
-    $('.modal_start').animate({
-        scrollTop: "400"},
-        20, function() {
-        console.log('mouseestanele');
-    });
+        scrollTop: scrollTeste
+    }, 20);
 }
 
 function descentralizarInputMatricula(){
